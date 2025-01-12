@@ -4,14 +4,14 @@ import { LuSearch } from "react-icons/lu";
 import Logo from "../assets/LogoNav.png";
 const Navbar = () => {
   return (
-    <div className="px-28">
+    <div className="px-36 py-4 bg-pink-200">
       <div className="flex justify-between items-center">
         {/* LOGO */}
         <div className="flex items-center">
-          <img src={Logo} alt="/" className="size-28" />
-          <h1>BREW HAVEN</h1>
+          <img src={Logo} alt="/" className="size-20" />
+          <h1 className="font-Syncopate font-medium text-2xl">BREW HAVEN</h1>
         </div>
-        <div className="flex gap-16">
+        <div className="flex gap-14">
           <h1 className="font-BarlowCondensed text-2xl cursor-pointer">Home</h1>
           <h1 className="font-BarlowCondensed text-2xl cursor-pointer">
             About

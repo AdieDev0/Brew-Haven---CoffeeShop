@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         "BarlowCondensed": ["Barlow Condensed"],
+        "YanoneKaffeesatz": ["Yanone Kaffeesatz"],
+        "Syncopate": ["Syncopate"],
       },
     },
   },
