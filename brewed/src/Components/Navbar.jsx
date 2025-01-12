@@ -10,7 +10,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { IoPersonCircleOutline } from "react-icons/io5";
-import { RiSearchLine } from "react-icons/ri"; // Assuming LuSearch was meant to be RiSearchLine
+import { RiSearchLine } from "react-icons/ri";
+import { CgMenu } from "react-icons/cg";
 import { MdInbox, MdMail } from "react-icons/md";
 
 const Navbar = () => {
@@ -66,7 +67,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="px-36 bg-pink-700 hidden md:block">
+      <div className="px-36 hidden md:block">
         <div className="flex justify-between items-center">
           {/* Logo and Title */}
           <div className="flex items-center">
@@ -102,10 +103,10 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="flex md:hidden justify-between bg-black/40 items-center">
+      <div className="flex md:hidden justify-between items-center">
         {/* LOGO */}
         <div className="flex items-center">
-          <img src={Logo} alt="/" className="w-16 h-auto" />
+          <img src={Logo} alt="/" className="w-24 h-auto" />
           <h1 className="font-Syncopate font-medium text-xl text-white">
             BREW HAVEN
           </h1>
@@ -114,7 +115,10 @@ const Navbar = () => {
         <div>
           {["bottom"].map((anchor) => (
             <React.Fragment key={anchor}>
-              <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+              {/* Replace text button with an icon */}
+              <Button onClick={toggleDrawer(anchor, true)}>
+                <CgMenu className="text-2xl border bg-white w-12 h-8 text-black rounded-md" />
+              </Button>
               <Drawer
                 anchor={anchor}
                 open={state[anchor]}
