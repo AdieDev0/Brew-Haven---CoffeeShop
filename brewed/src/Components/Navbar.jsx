@@ -102,10 +102,10 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="flex md:hidden justify-between items-center">
+      <div className="flex md:hidden justify-between items-center px-2">
         {/* LOGO */}
         <div className="flex items-center">
-          <h1 className="font-Syncopate font-medium text-xl text-white">
+          <h1 className="font-Syncopate font-medium text-xl text-white ml-5">
             BREW HAVEN
           </h1>
         </div>
