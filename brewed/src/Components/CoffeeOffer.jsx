@@ -8,9 +8,96 @@ const CoffeeOffer = () => {
 
   // Define the items for the carousel
   const items = [
-    <img src={capu} onDragStart={handleDragStart} role="presentation" alt="Cappuccino" />,
-    <img src="path-to-img" onDragStart={handleDragStart} role="presentation" alt="Coffee 1" />,
-    <img src="path-to-img" onDragStart={handleDragStart} role="presentation" alt="Coffee 2" />,
+    <img
+      src={capu}
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Cappuccino"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 1"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
+    <img
+      src="path-to-img"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="Coffee 2"
+    />,
   ];
 
   return (
@@ -22,7 +109,9 @@ const CoffeeOffer = () => {
       </div>
       <div className="mt-8">
         {/* AliceCarousel to display coffee images */}
-        <AliceCarousel mouseTracking items={items} />
+        <div>
+          <AliceCarousel mouseTracking items={items} />
+        </div>
       </div>
     </div>
   );
