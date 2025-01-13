@@ -7,6 +7,7 @@ export default {
         "BarlowCondensed": ["Barlow Condensed"],
         "YanoneKaffeesatz": ["Yanone Kaffeesatz"],
         "Syncopate": ["Syncopate"],
+        "Kanit": ["Kanit"],
       },
     },
   },
