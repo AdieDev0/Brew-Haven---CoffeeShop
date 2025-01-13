@@ -71,7 +71,6 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo and Title */}
           <div className="flex items-center">
-            <img src={Logo} alt="/" className="w-20 h-auto" />
             <h1 className="font-Syncopate font-medium text-2xl text-white">
               BREW HAVEN
             </h1>
@@ -106,7 +105,6 @@ const Navbar = () => {
       <div className="flex md:hidden justify-between items-center">
         {/* LOGO */}
         <div className="flex items-center">
-          <img src={Logo} alt="/" className="w-24 h-auto" />
           <h1 className="font-Syncopate font-medium text-xl text-white">
             BREW HAVEN
           </h1>
