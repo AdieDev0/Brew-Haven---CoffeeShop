@@ -23,7 +23,9 @@ const Card = ({ image, name, comments }) => (
     />
     <div className="">
       <h1 className="font-Kanit font-semibold text-2xl md:text-3xl">{name}</h1>
-      <p className="font-Kanit text-sm lg:text-lg lg:mr-60 text-gray-700">{comments}</p>
+      <p className="font-Kanit text-sm lg:text-lg lg:mr-60 text-gray-700">
+        {comments}
+      </p>
     </div>
   </div>
 );
