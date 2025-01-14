@@ -5,14 +5,16 @@ import cus1 from "../assets/SaysCustomer/customer1.jpg";
 import cus2 from "../assets/SaysCustomer/customer2.jpg";
 import cus3 from "../assets/SaysCustomer/customer3.jpg";
 import cus4 from "../assets/SaysCustomer/customer4.jpg";
+// react icons
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 const Card = ({ image, name, comments }) => (
   // CARDS
   <div className="flex gap-5">
-    <img src={image} alt="/" className="w-80 object-cover" />
+    <img src={image} alt="/" className="w-80 object-cover rounded-md" />
     <div className="">
       <h1 className="font-Kanit font-semibold text-3xl">{name}</h1>
-      <p className="font-Kanit mr-60">{comments}</p>
+      <p className="font-Kanit mr-60 text-gray-700">{comments}</p>
     </div>
   </div>
 );
@@ -44,7 +46,7 @@ const SaysCustomer = () => {
   return (
     // BODY
     <div className="bg-gray-100 pt-16 px-32">
-      <p className="font-Kanit text-4xl text-gray-800 font-semibold">
+      <p className="font-Kanit text-4xl text-gray-800 font-semibold mb-10">
         WHAT SAYS CUSTOMER
       </p>
       {/* Carousel */}
@@ -62,18 +64,18 @@ const SaysCustomer = () => {
           disableDotsControls
           renderPrevButton={() => (
             <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-stone-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-stone-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Previous"
             >
-              &#8249;
+              <GrFormPrevious />
             </button>
           )}
           renderNextButton={() => (
             <button
-              className="absolute right-0 top-1/4 transform -translate-y-1/2 bg-red-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute right-0 top-1/4 transform -translate-y-1/2 bg-red-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Next"
             >
-              &#8250;
+              <GrFormNext />
             </button>
           )}
         />

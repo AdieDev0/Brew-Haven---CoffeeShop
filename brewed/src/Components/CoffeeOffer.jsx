@@ -15,6 +15,8 @@ import mocha from "../assets/CoffeeOfferImage/mocha.jpg";
 import mug from "../assets/CoffeeOfferImage/Mug.jpeg";
 import study from "../assets/CoffeeOfferImage/Study.jpg";
 import style from "../assets/CoffeeOfferImage/style.jpg";
+// REACT ICONS
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 // Card Component
 const Card = ({ image, title, description }) => (
@@ -131,7 +133,7 @@ const CoffeeOffer = () => {
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-stone-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Previous"
             >
-              &#8249;
+              <GrFormPrevious />
             </button>
           )}
           renderNextButton={() => (
@@ -139,7 +141,7 @@ const CoffeeOffer = () => {
               className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Next"
             >
-              &#8250;
+              <GrFormNext />
             </button>
           )}
         />
