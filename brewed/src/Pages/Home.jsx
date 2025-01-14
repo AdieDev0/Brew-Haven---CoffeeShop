@@ -5,6 +5,7 @@ import AboutOurShop from "../Components/AboutOurShop.jsx";
 import CoffeeOffer from "../Components/CoffeeOffer.jsx";
 import SaysCustomer from "../Components/SaysCustomer.jsx";
 import OurBlog from "../Components/OurBlog.jsx";
+import GetInTouch from "../Components/GetInTouch.jsx";
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
         <CoffeeOffer />
         <SaysCustomer />
         <OurBlog />
+        <GetInTouch />
       </div>
     </div>
   );
