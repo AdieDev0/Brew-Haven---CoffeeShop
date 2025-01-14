@@ -4,6 +4,7 @@ import Hero from "../Components/Hero.jsx";
 import AboutOurShop from "../Components/AboutOurShop.jsx";
 import CoffeeOffer from "../Components/CoffeeOffer.jsx";
 import SaysCustomer from "../Components/SaysCustomer.jsx";
+import OurBlog from "../Components/OurBlog.jsx";
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
         <AboutOurShop />
         <CoffeeOffer />
         <SaysCustomer />
+        <OurBlog />
       </div>
     </div>
   );
