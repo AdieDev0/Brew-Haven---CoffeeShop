@@ -18,6 +18,7 @@ import style from "../assets/CoffeeOfferImage/style.jpg";
 
 // Card Component
 const Card = ({ image, title, description }) => (
+  // CARDS
   <div className="relative bg-stone-800 hover:bg-red-600 duration-200 text-white rounded-lg shadow-lg overflow-hidden mx-10">
     <img src={image} alt={title} className="w-full h-40 object-cover" />
     <div className="p-4 text-center">
@@ -105,14 +106,15 @@ const CoffeeOffer = () => {
   ];
 
   return (
-    <div className="pt-16 bg-gray-100">
+    // BODY
+    <div className="pt-16 bg-gray-100 px-6 lg:px-16">
       {/* Title */}
       <h1 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-800">
         OUR COFFEE OFFER
       </h1>
 
       {/* Carousel */}
-      <div className="relative ">
+      <div className="relative">
         <AliceCarousel
           items={items}
           responsive={{
@@ -126,7 +128,7 @@ const CoffeeOffer = () => {
           disableDotsControls
           renderPrevButton={() => (
             <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-stone-600 text-white w-12 h-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-stone-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Previous"
             >
               &#8249;
@@ -134,7 +136,7 @@ const CoffeeOffer = () => {
           )}
           renderNextButton={() => (
             <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white w-12 h-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white w-10 h-10 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Next"
             >
               &#8250;
