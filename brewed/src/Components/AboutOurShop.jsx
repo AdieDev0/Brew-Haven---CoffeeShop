@@ -3,7 +3,7 @@ import coffeePerson from "../assets/CoffeePerson.jpg";
 
 const AboutOurShop = () => {
   return (
-    <div className="flex flex-col md:flex-row pt-16 md:pt-32 px-8 md:px-20 lg:px-52 justify-between gap-10 md:gap-20">
+    <div className="flex flex-col md:flex-row pt-16  px-8 md:px-20 lg:px-52 justify-between gap-10 md:gap-20">
       <div className="grid gap-5">
         <h1 className="font-Kanit text-2xl md:text-4xl font-semibold">
           ABOUT OUR COFFEE SHOP
