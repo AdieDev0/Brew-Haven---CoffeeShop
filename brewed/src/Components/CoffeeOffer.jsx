@@ -107,7 +107,7 @@ const CoffeeOffer = () => {
 
   return (
     // BODY
-    <div className="pt-16 bg-gray-100 px-6 lg:px-16">
+    <div className="pt-16 bg-gradient-to-b from-white via-gray-100 to-gray-100 px-6 lg:px-16">
       {/* Title */}
       <h1 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-800">
         OUR COFFEE OFFER
