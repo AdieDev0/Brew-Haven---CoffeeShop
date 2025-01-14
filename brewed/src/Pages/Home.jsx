@@ -7,6 +7,7 @@ import SaysCustomer from "../Components/SaysCustomer.jsx";
 import OurBlog from "../Components/OurBlog.jsx";
 import GetInTouch from "../Components/GetInTouch.jsx";
 import MapApi from "../Components/MapApi.jsx";
+import Footer from "../Components/Footer.jsx";
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
         <OurBlog />
         <GetInTouch />
         <MapApi />
+        <Footer/>
       </div>
     </div>
   );
