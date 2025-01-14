@@ -6,6 +6,7 @@ import CoffeeOffer from "../Components/CoffeeOffer.jsx";
 import SaysCustomer from "../Components/SaysCustomer.jsx";
 import OurBlog from "../Components/OurBlog.jsx";
 import GetInTouch from "../Components/GetInTouch.jsx";
+import MapApi from "../Components/MapApi.jsx";
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
         <SaysCustomer />
         <OurBlog />
         <GetInTouch />
+        <MapApi />
       </div>
     </div>
   );
