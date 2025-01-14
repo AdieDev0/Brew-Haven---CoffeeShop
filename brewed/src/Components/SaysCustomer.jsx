@@ -1,6 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import cus1 from '../assets/SaysCustomer/customer1.jpg'
 import cus2 from "../assets/SaysCustomer/customer2.jpg";
 import cus3 from "../assets/SaysCustomer/customer3.jpg";
 import cus4 from "../assets/SaysCustomer/customer4.jpg";
@@ -29,7 +30,11 @@ const Card = ({ image, name, comments }) => (
 
 const SaysCustomer = () => {
   const items = [
-    
+    <Card
+      image={cus1}
+      name="Rod"
+      comments="Absolutely delightful experience! The coffee selection here is incredible, and each cup is brewed to perfection. The ambiance of the shop is warm and inviting, making it the perfect place to relax and enjoy a cup of coffee. Ordering from their website was also a breeze, with a seamless and intuitive interface. I'll definitely be coming back for more!"
+    />,
     <Card
       image={cus2}
       name="Jessica"
