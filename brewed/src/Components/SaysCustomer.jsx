@@ -16,10 +16,14 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 const Card = ({ image, name, comments }) => (
   // CARDS
   <div className="flex flex-col lg:flex-row gap-5">
-    <img src={image} alt="/" className="w-full  lg:w-80 object-cover rounded-md" />
+    <img
+      src={image}
+      alt="/"
+      className="w-full  lg:w-80 object-cover rounded-md"
+    />
     <div className="">
-      <h1 className="font-Kanit font-semibold text-3xl">{name}</h1>
-      <p className="font-Kanit lg:mr-60 text-gray-700">{comments}</p>
+      <h1 className="font-Kanit font-semibold text-2xl md:text-3xl">{name}</h1>
+      <p className="font-Kanit text-sm lg:text-lg lg:mr-60 text-gray-700">{comments}</p>
     </div>
   </div>
 );
@@ -89,7 +93,7 @@ const SaysCustomer = () => {
           disableDotsControls
           renderPrevButton={() => (
             <button
-              className="absolute top-[530px] left-28 lg:left-[990px] lg:right-0 lg:top-1/2 transform -translate-y-1/2 bg-stone-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute top-[500px] left-28 lg:left-[990px] lg:right-0 lg:top-1/2 transform -translate-y-1/2 bg-stone-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Previous"
             >
               <GrFormPrevious />
@@ -97,7 +101,7 @@ const SaysCustomer = () => {
           )}
           renderNextButton={() => (
             <button
-              className="absolute top-[530px] right-28 lg:right-0 lg:top-1/4 transform -translate-y-1/2 bg-red-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+              className="absolute top-[500px] right-28 lg:right-0 lg:top-1/4 transform -translate-y-1/2 bg-red-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
               aria-label="Next"
             >
               <GrFormNext />
