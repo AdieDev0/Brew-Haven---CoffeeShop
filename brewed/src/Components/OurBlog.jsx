@@ -9,7 +9,7 @@ const OurBlog = () => {
         OUR COFFEE BLOG
       </h1>
       {/* Blog Cards */}
-      <div className="flex flex-wrap gap-5 justify-center">
+      <div className="flex flex-wrap gap-16 justify-center">
         {/* Card 1 */}
         <div className="max-w-sm lg:max-w-md shadow-lg rounded-xl overflow-hidden bg-white transform transition duration-300 hover:scale-105">
           <img
