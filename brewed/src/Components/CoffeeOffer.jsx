@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import capu from "../assets/CoffeeOfferImage/Capu.jpg";
@@ -20,17 +21,27 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 // Card Component
 const Card = ({ image, title, description }) => (
-  // CARDS
-  <div className="relative bg-stone-800 hover:bg-red-600 duration-200 text-white rounded-lg shadow-lg overflow-hidden mx-10">
-    <img src={image} alt={title} className="w-full h-40 object-cover" />
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="relative bg-stone-800 hover:bg-red-600 duration-200 text-white rounded-lg shadow-lg overflow-hidden mx-10"
+  >
+    <motion.img
+      src={image}
+      alt={title}
+      className="w-full h-40 object-cover"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    />
     <div className="p-4 text-center">
       <h3 className="text-lg font-semibold mb-2 font-Kanit">{title}</h3>
       <p className="text-sm mb-4 font-Kanit">{description}</p>
-      <button className="px-4 py-2 text-sm font-semibold font-kanit bg-white text-gray-900 rounded-md hover:bg-transparent hover:border-white border hover:text-white  transition">
+      <button className="px-4 py-2 text-sm font-semibold font-Kanit bg-white text-gray-900 rounded-md hover:bg-transparent hover:border-white border hover:text-white transition">
         READ MORE
       </button>
     </div>
-  </div>
+  </motion.div>
 );
 
 const CoffeeOffer = () => {
