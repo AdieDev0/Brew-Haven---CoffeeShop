@@ -11,7 +11,7 @@ const OurBlog = () => {
       {/* Blog Cards */}
       <div className="flex flex-wrap gap-10 justify-center lg:flex-row">
         {/* Card 1 */}
-        <div className="max-w-sm lg:max-w-lg shadow-lg rounded-xl overflow-hidden bg-white transform transition duration-300 hover:scale-105">
+        <div className="max-w-sm lg:max-w-xl shadow-lg rounded-xl overflow-hidden bg-white transform transition duration-300 hover:scale-105">
           <img
             src={CoffeeGuy}
             alt="Coffee Preparation"
@@ -35,11 +35,11 @@ const OurBlog = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="max-w-sm lg:max-w-md shadow-lg rounded-xl overflow-hidden bg-white transform transition duration-300 hover:scale-105">
+        <div className="max-w-sm lg:max-w-xl shadow-lg rounded-xl overflow-hidden bg-white transform transition duration-300 hover:scale-105">
           <img
             src={Espresso}
             alt="Espresso Preparation"
-            className="w-full h-48 lg:h-56 object-cover"
+            className="w-full h-48 lg:h-96 object-cover"
           />
           <div className="p-5">
             <h2 className="font-Kanit font-semibold text-xl md:text-2xl text-gray-900">
