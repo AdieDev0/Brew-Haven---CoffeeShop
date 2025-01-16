@@ -8,21 +8,13 @@ const Coffees = () => {
   return (
     <div>
       <div
-
         className="relative w-full h-[200px] md:h-[90px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${BGimg})` }} 
+        style={{ backgroundImage: `url(${BGimg})` }}
       >
-        
-        <div
-       
-          className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"
-        ></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
 
         {/* Navbar */}
-        <div
-     
-          className="relative z-10"
-        >
+        <div className="relative z-10">
           <Navbar />
         </div>
       </div>
