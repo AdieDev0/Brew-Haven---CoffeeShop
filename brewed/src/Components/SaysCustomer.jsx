@@ -1,7 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import cus1 from '../assets/SaysCustomer/customer1.jpg'
+import cus1 from "../assets/SaysCustomer/customer1.jpg";
 import cus2 from "../assets/SaysCustomer/customer2.jpg";
 import cus3 from "../assets/SaysCustomer/customer3.jpg";
 import cus4 from "../assets/SaysCustomer/customer4.jpg";
@@ -23,7 +23,9 @@ const Card = ({ image, name, comments }) => (
     />
     <div className="">
       <h1 className="font-Kanit font-semibold text-2xl md:text-3xl">{name}</h1>
-      <p className="font-Kanit text-sm lg:text-lg lg:mr-60 text-gray-700">{comments}</p>
+      <p className="font-Kanit text-sm lg:text-lg lg:mr-60 text-gray-700">
+        {comments}
+      </p>
     </div>
   </div>
 );
