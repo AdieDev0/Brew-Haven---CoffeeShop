@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -12,10 +13,22 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { RiSearchLine } from "react-icons/ri";
 import { CgMenu } from "react-icons/cg";
 
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Coffees", path: "/shop" },
+  { name: "Shop", path: "/shop" },
+  { name: "Blog", path: "/blog" },
+  { name: "Contact", path: "/contact" },
+];
+
+const userLinks = [
+  { text: "Login", icon: <IoPersonCircleOutline /> },
+  { text: "Search", icon: <RiSearchLine /> },
+];
+
 const Navbar = () => {
-  const [state, setState] = React.useState({
-    bottom: false,
-  });
+  const [state, setState] = React.useState({ bottom: false });
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
@@ -24,7 +37,7 @@ const Navbar = () => {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
+  const drawerList = (anchor) => (
     <Box
       sx={{ width: 250 }}
       role="presentation"
@@ -32,22 +45,20 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "About", "Coffees", "Shop", "Blog", "Contact"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
+        {navLinks.map(({ name, path }) => (
+          <ListItem key={name} disablePadding>
+            <ListItemButton component={NavLink} to={path}>
+              <ListItemText primary={name} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
       <List>
-        {["Login", "Search"].map((text, index) => (
+        {userLinks.map(({ text, icon }) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <IoPersonCircleOutline /> : <RiSearchLine />}
-              </ListItemIcon>
+              <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
@@ -60,41 +71,47 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar */}
       <div className="hidden md:flex justify-between items-center px-8 lg:px-36 py-4">
-        {/* Logo */}
-        <h1 className="font-Syncopate font-medium text-2xl lg:text-3xl text-white">
+        <NavLink to="/" className="font-Syncopate font-medium text-2xl lg:text-3xl text-white">
           BREW HAVEN
-        </h1>
-        {/* Navigation Links */}
+        </NavLink>
+
         <div className="flex gap-4 lg:gap-10">
-          {["Home", "About", "Coffees", "Shop", "Blog", "Contact"].map((text) => (
-            <h1
-              key={text}
-              className="font-BarlowCondensed text-lg lg:text-xl cursor-pointer text-white hover:bg-red-600 hover:text-white duration-200 uppercase py-2 px-4"
+          {navLinks.map(({ name, path }) => (
+            <NavLink
+              key={name}
+              to={path}
+              className={({ isActive }) =>
+                `font-BarlowCondensed text-lg lg:text-xl cursor-pointer duration-200 uppercase py-2 px-4 ${
+                  isActive ? "text-red-600" : "text-white hover:bg-red-600"
+                }`
+              }
             >
-              {text}
-            </h1>
+              {name}
+            </NavLink>
           ))}
         </div>
-        {/* Login and Search */}
+
         <div className="flex gap-4 lg:gap-10 items-center">
-          <button className="flex items-center text-sm lg:text-lg gap-1 text-white hover:text-red-600 duration-200 uppercase">
-            <IoPersonCircleOutline/>
-            Login
-          </button>
-          <button className="text-lg lg:text-xl cursor-pointer text-white hover:text-red-600 duration-200">
-            <RiSearchLine />
-          </button>
+          {userLinks.map(({ text, icon }, index) => (
+            <button
+              key={index}
+              aria-label={text}
+              className="flex items-center text-sm lg:text-lg gap-1 text-white hover:text-red-600 duration-200 uppercase"
+            >
+              {icon}
+              {text === "Login" && text}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Mobile Navbar */}
       <div className="flex md:hidden justify-between items-center px-4 py-2">
-        {/* Logo */}
-        <h1 className="font-Syncopate font-medium text-xl text-white">
+        <NavLink to="/" className="font-Syncopate font-medium text-xl text-white">
           BREW HAVEN
-        </h1>
-        {/* Menu */}
-        <Button onClick={toggleDrawer("bottom", true)}>
+        </NavLink>
+
+        <Button aria-label="Open Menu" onClick={toggleDrawer("bottom", true)}>
           <CgMenu className="text-2xl text-white" />
         </Button>
         <Drawer
@@ -102,7 +119,7 @@ const Navbar = () => {
           open={state["bottom"]}
           onClose={toggleDrawer("bottom", false)}
         >
-          {list("bottom")}
+          {drawerList("bottom")}
         </Drawer>
       </div>
     </>

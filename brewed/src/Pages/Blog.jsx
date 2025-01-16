@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import AboutOurShop from "../Components/AboutOurShop";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div>
+      <AboutOurShop />
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;
