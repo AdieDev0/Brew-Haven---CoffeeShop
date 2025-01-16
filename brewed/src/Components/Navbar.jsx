@@ -88,7 +88,9 @@ const Navbar = () => {
               to={path}
               className={({ isActive }) =>
                 `font-BarlowCondensed text-lg lg:text-xl cursor-pointer duration-200 uppercase rounded-b-xl py-6 px-4 ${
-                  isActive ? "text-white bg-red-600" : "text-white hover:bg-red-600"
+                  isActive
+                    ? "text-white bg-red-600"
+                    : "text-white hover:bg-red-600"
                 }`
               }
             >
