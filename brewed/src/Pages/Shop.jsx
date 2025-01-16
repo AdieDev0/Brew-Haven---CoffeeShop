@@ -18,7 +18,7 @@ const Shop = () => {
     {/* Main Content */}
 
     <div className="mb-20">
-      <CoffeeOffer />
+      
     </div>
     <Footer />
   </div>
