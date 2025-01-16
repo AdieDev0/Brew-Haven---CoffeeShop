@@ -70,7 +70,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="hidden md:flex justify-between items-center px-8 lg:px-36 py-4">
+      <div className="bg-transparent hidden md:flex justify-between items-center px-8 lg:px-36 py-4">
         <NavLink to="/" className="font-Syncopate font-medium text-2xl lg:text-3xl text-white">
           BREW HAVEN
         </NavLink>

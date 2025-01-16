@@ -1,12 +1,9 @@
-import React from "react";
-import AboutOurShop from "../Components/AboutOurShop";
+import React from 'react'
 
 const Blog = () => {
   return (
-    <div>
-      <AboutOurShop />
-    </div>
-  );
-};
+    <div>Blog</div>
+  )
+}
 
-export default Blog;
+export default Blog
