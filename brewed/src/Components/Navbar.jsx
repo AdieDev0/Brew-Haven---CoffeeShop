@@ -16,7 +16,7 @@ import { CgMenu } from "react-icons/cg";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Coffees", path: "/shop" },
+  { name: "Coffees", path: "/coffees" },
   { name: "Shop", path: "/shop" },
   { name: "Blog", path: "/blog" },
   { name: "Contact", path: "/contact" },
