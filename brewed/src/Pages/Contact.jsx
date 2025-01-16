@@ -3,6 +3,7 @@ import GetInTouch from "../Components/GetInTouch";
 import Navbar from "../Components/Navbar";
 import BGimg from "../assets/BGimg.jpg";
 import Footer from "../Components/Footer";
+import MapApi from "../Components/MapApi";
 const Contact = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const Contact = () => {
 
       <div className="mb-20">
         <GetInTouch />
+        <MapApi />
       </div>
       <Footer />
     </div>
