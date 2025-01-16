@@ -73,7 +73,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="bg-transparent hidden md:flex justify-between items-center px-8 lg:px-36 py-4">
+      <div className="bg-transparent hidden md:flex justify-between items-center px-8 lg:px-36">
         <NavLink
           to="/"
           className="font-Syncopate font-medium text-2xl lg:text-3xl text-white"
@@ -87,8 +87,8 @@ const Navbar = () => {
               key={name}
               to={path}
               className={({ isActive }) =>
-                `font-BarlowCondensed text-lg lg:text-xl cursor-pointer duration-200 uppercase py-2 px-4 ${
-                  isActive ? "text-red-600" : "text-white hover:bg-red-600"
+                `font-BarlowCondensed text-lg lg:text-xl cursor-pointer duration-200 uppercase rounded-b-xl py-6 px-4 ${
+                  isActive ? "text-white bg-red-600" : "text-white hover:bg-red-600"
                 }`
               }
             >
