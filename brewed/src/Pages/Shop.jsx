@@ -2,7 +2,7 @@ import React from "react";
 import NotFound from "../Components/NotFound";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-
+import BGimg from "../assets/BGimg.jpg";
 const Shop = () => {
   return (
     <div>
