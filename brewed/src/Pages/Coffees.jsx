@@ -12,7 +12,7 @@ const Coffees = () => {
         className="relative w-full h-[200px] md:h-[90px] bg-cover bg-center"
         style={{ backgroundImage: `url(${BGimg})` }} 
       >
-        {/* Black Overlay with Opacity and Blur */}
+        
         <div
        
           className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"
