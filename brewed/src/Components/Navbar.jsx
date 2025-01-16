@@ -31,7 +31,10 @@ const Navbar = () => {
   const [state, setState] = React.useState({ bottom: false });
 
   const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
     setState({ ...state, [anchor]: open });
@@ -71,7 +74,10 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar */}
       <div className="bg-transparent hidden md:flex justify-between items-center px-8 lg:px-36 py-4">
-        <NavLink to="/" className="font-Syncopate font-medium text-2xl lg:text-3xl text-white">
+        <NavLink
+          to="/"
+          className="font-Syncopate font-medium text-2xl lg:text-3xl text-white"
+        >
           BREW HAVEN
         </NavLink>
 
@@ -107,7 +113,10 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div className="flex md:hidden justify-between items-center px-4 py-2">
-        <NavLink to="/" className="font-Syncopate font-medium text-xl text-white">
+        <NavLink
+          to="/"
+          className="font-Syncopate font-medium text-xl text-white"
+        >
           BREW HAVEN
         </NavLink>
 
