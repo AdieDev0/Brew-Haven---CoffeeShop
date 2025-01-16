@@ -41,7 +41,10 @@ const About = () => {
       </div>
 
       {/* Main Content */}
-      <AboutOurShop />
+
+      <div className="mb-20">
+        <AboutOurShop />
+      </div>
       <Footer />
     </div>
   );
