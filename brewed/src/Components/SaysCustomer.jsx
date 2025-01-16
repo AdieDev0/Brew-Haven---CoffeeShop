@@ -1,14 +1,14 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import cus1 from "../assets/saysCustomer/customer1.jpg";
-import cus2 from "../assets/saysCustomer/customer2.jpg";
-import cus3 from "../assets/saysCustomer/customer3.jpg";
-import cus4 from "../assets/saysCustomer/customer4.jpg";
-import cus5 from "../assets/saysCustomer/customer5.jpg";
-import cus6 from "../assets/saysCustomer/customer6.jpg";
-import cus7 from "../assets/saysCustomer/customer7.jpg";
-import cus8 from "../assets/saysCustomer/customer8.jpg";
+import cus1 from "../assets/saysCustomer/customerOne.jpg";
+import cus2 from "../assets/saysCustomer/customerTwo.jpg";
+import cus3 from "../assets/saysCustomer/customerThree.jpg";
+import cus4 from "../assets/saysCustomer/customerFour.jpg";
+import cus5 from "../assets/saysCustomer/customerFive.jpg";
+import cus6 from "../assets/saysCustomer/customerSix.jpg";
+import cus7 from "../assets/saysCustomer/customerSeven.jpg";
+import cus8 from "../assets/saysCustomer/customerEight.jpg";
 
 // react icons
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
