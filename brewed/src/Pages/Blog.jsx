@@ -2,6 +2,7 @@ import React from "react";
 import OurBlog from "../Components/OurBlog";
 import BGimg from "../assets/BGimg.jpg";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 const Blog = () => {
   return (
     <div>
