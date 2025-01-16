@@ -8,12 +8,7 @@ const Coffees = () => {
   return (
     <div>
       <div
-        // The parent container for the background image
-        // - `relative`: Ensures that child elements like the overlay and navbar can use absolute positioning relative to this container.
-        // - `w-full`: Makes the container span the full width of the screen.
-        // - `h-[200px] md:h-[300px]`: Sets a fixed height for the container, responsive for medium screens and larger.
-        // - `bg-cover`: Ensures the background image covers the entire container.
-        // - `bg-center`: Centers the background image within the container.
+
         className="relative w-full h-[200px] md:h-[90px] bg-cover bg-center"
         style={{ backgroundImage: `url(${BGimg})` }} 
       >
