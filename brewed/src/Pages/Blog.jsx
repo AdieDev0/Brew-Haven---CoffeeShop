@@ -1,4 +1,5 @@
 import React from "react";
+import OurBlog from "../Components/OurBlog";
 
 const Blog = () => {
   return (
@@ -18,7 +19,7 @@ const Blog = () => {
     {/* Main Content */}
 
     <div className="mb-20">
-      <CoffeeOffer />
+      <OurBlog />
     </div>
     <Footer />
   </div>
