@@ -15,7 +15,7 @@ const About = () => {
         // - `h-[200px] md:h-[300px]`: Sets a fixed height for the container, responsive for medium screens and larger.
         // - `bg-cover`: Ensures the background image covers the entire container.
         // - `bg-center`: Centers the background image within the container.
-        className="relative w-full h-[200px] md:h-[90px] bg-cover bg-center"
+        className="relative w-full h-[65px] md:h-[90px] bg-cover bg-center"
         style={{ backgroundImage: `url(${BGimg})` }} // Dynamically sets the background image.
       >
         {/* Black Overlay with Opacity and Blur */}
