@@ -1,5 +1,8 @@
 import React from "react";
-
+import GetInTouch from "../Components/GetInTouch";
+import Navbar from "../Components/Navbar";
+import BGimg from "../assets/BGimg.jpg";
+import Footer from "../Components/Footer";
 const Contact = () => {
   return (
     <div>
@@ -18,7 +21,7 @@ const Contact = () => {
       {/* Main Content */}
 
       <div className="mb-20">
-        <OurBlog />
+        <GetInTouch />
       </div>
       <Footer />
     </div>
