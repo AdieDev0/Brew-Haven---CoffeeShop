@@ -76,42 +76,40 @@ const SaysCustomer = () => {
 
   return (
     // BODY
-    <div className="bg-gray-100 py-16 px-5 lg:px-60">
-      <p className="font-Kanit text-4xl text-gray-800 font-semibold mb-10">
-        WHAT SAYS CUSTOMER
-      </p>
-      {/* Carousel */}
-      <div className="relative">
-        <AliceCarousel
-          items={items}
-          responsive={{
-            0: { items: 1 },
-            600: { items: 1 },
-            1024: { items: 1 },
-          }}
-          infinite
-          autoPlay
-          autoPlayInterval={4000}
-          disableDotsControls
-          renderPrevButton={() => (
-            <button
-              className="absolute top-[500px] left-28 lg:left-[990px] lg:right-0 lg:top-1/2 transform -translate-y-1/2 bg-stone-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
-              aria-label="Previous"
-            >
-              <GrFormPrevious />
-            </button>
-          )}
-          renderNextButton={() => (
-            <button
-              className="absolute top-[500px] right-28 lg:right-0 lg:top-1/4 transform -translate-y-1/2 bg-red-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
-              aria-label="Next"
-            >
-              <GrFormNext />
-            </button>
-          )}
-        />
-      </div>
-    </div>
+<div className="relative p-20">
+  <AliceCarousel
+    items={items}
+    responsive={{
+      0: { items: 1 },
+      600: { items: 1 },
+      1024: { items: 1 },
+    }}
+    infinite
+    autoPlay
+    autoPlayInterval={4000}
+    disableDotsControls
+    renderPrevButton={() => null} // Hide default placement
+    renderNextButton={() => null} // Hide default placement
+  />
+
+  {/* Custom vertical buttons */}
+  <div className="absolute right-5 top-1/2 -translate-y-1/2 flex flex-col gap-3">
+    <button
+      className="bg-red-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+      aria-label="Next"
+    >
+      <GrFormNext size={24} />
+    </button>
+    <button
+      className="bg-stone-600 text-white size-12 rounded-md flex items-center justify-center shadow-lg hover:bg-red-700 transition"
+      aria-label="Previous"
+    >
+      <GrFormPrevious size={24} />
+    </button>
+  </div>
+</div>
+
+
   );
 };
 
